@@ -1,6 +1,8 @@
-package Medium;
+package Medium.Miscellaneous;
 
 import java.util.*;
+
+//https://leetcode.com/problems/top-k-frequent-elements/
 
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {

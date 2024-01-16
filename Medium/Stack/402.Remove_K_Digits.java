@@ -2,6 +2,8 @@ package Medium.Stack;
 
 import java.util.*;
 
+//https://leetcode.com/problems/remove-k-digits/description/
+
 class Solution {
     public String removeKdigits(String num, int k) {
         int left = k;
