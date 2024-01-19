@@ -7,7 +7,7 @@ import java.util.*;;
 class Solution {
     public List<String> generateParenthesis(int n) {
 
-        ArrayList<String> arr = new ArrayList();
+        ArrayList<String> arr = new ArrayList<String>();
         recursion(n, 0, 0, "", arr);
         return (arr);
     }
