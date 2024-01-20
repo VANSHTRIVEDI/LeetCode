@@ -4,7 +4,6 @@ import java.util.*;
 
 //https://leetcode.com/problems/maximal-rectangle/description/
 
-//This is a very important question 
 
 class Solution {
     public int maximalRectangle(char[][] arr) {
