@@ -3,7 +3,6 @@ package Hard;
 import java.util.*;
 
 //https://leetcode.com/problems/maximal-rectangle/description/
-//hard one try this
 
 class Solution {
     public int maximalRectangle(char[][] arr) {
