@@ -1,6 +1,7 @@
 package Easy.Miscellaneous;
 
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+//Imp Question
 class Solution {
     public int maxProfit(int[] prices) {
         int min, max, profit = 0, maxprofit = 0;
