@@ -1,5 +1,6 @@
 package Easy.Binary_Tree;
 
+//https://leetcode.com/problems/diameter-of-binary-tree/description/
 class TreeNode {
     int val;
     TreeNode left;
@@ -16,6 +17,31 @@ class TreeNode {
         this.val = val;
         this.left = left;
         this.right = right;
+    }
+}
+
+// best way time complexity O(n)
+class Solution2 {
+    int height(TreeNode root, int arr[]) {
+        if (root == null) {
+            return 0;
+        }
+
+        int left = height(root.left, arr);
+        int right = height(root.right, arr);
+        arr[0] = Math.max(arr[0], (left + right));
+        int ans = maax(left, right) + 1;
+        return ans;
+    }
+
+    public static int maax(int num1, int num2) {
+        return Math.max(num1, num2);
+    }
+
+    public int diameterOfBinaryTree(TreeNode root) {
+        int arr[] = new int[1];
+        height(root, arr);
+        return arr[0];
     }
 }
 
