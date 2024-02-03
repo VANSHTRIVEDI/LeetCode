@@ -1,6 +1,7 @@
 package Easy.Binary_Tree;
 
 //https://leetcode.com/problems/diameter-of-binary-tree/description/
+
 class TreeNode {
     int val;
     TreeNode left;

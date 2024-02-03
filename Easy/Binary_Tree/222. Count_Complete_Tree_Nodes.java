@@ -2,7 +2,6 @@ package Easy.Binary_Tree;
 
 // https://leetcode.com/problems/count-complete-tree-nodes/
 
-// Definition for a binary tree node.
 class TreeNode {
     int val;
     TreeNode left;
