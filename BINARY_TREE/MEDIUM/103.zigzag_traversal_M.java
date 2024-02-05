@@ -21,6 +21,41 @@ class TreeNode {
 	}
 }
 
+// another way wuthout using array but it only beats 6% of java users
+class Solution2 {
+	public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+		List<List<Integer>> arr = new ArrayList<>();
+		if (root == null) {
+			return arr;
+		}
+		Queue<TreeNode> q = new LinkedList<>();
+		q.add(root);
+		boolean flag = true;
+		while (!q.isEmpty()) {
+			int n = q.size();
+			List<Integer> arr2 = new ArrayList<>(n);
+			for (int i = 0; i < n; i++) {
+				if (q.peek().left != null) {
+					q.add(q.peek().left);
+				}
+				if (q.peek().right != null) {
+					q.add(q.peek().right);
+				}
+				if (flag) {
+					arr2.add(q.poll().val);
+				} else {
+					arr2.add(0, q.poll().val);
+					System.out.println(arr2);
+				}
+			}
+			flag = !flag;
+			arr.add(arr2);
+		}
+		return arr;
+	}
+}
+
+// another way using array but it beats 100% of java users
 class Solution {
 
 	public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
