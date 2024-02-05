@@ -1,4 +1,4 @@
-package Easy.Binary_Tree;
+package BINARY_TREE.MEDIUM;
 
 //https://www.geeksforgeeks.org/problems/sum-tree/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
 

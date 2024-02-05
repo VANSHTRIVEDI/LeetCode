@@ -1,4 +1,4 @@
-package Easy.Binary_Tree;
+package BINARY_TREE.EASY;
 
 //https://leetcode.com/problems/balanced-binary-tree/description/
 
