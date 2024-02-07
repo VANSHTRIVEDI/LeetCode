@@ -33,9 +33,9 @@ class Solution {
                 Node temp = removed.temp;
                 col = removed.col;
 
-                if (!map.containsKey(col)) {
-                    map.put(col, 0);
-                }
+                // if (!map.containsKey(col)) {
+                // map.put(col, 0);
+                // }
                 map.put(col, temp.data);
 
                 if (temp.left != null) {
