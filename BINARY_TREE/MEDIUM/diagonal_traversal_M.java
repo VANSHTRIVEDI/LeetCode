@@ -67,24 +67,20 @@ class Tree {
 
         while (node != null) {
 
-            // Add current node to output
             diagonalVals.add(node.data);
-            // If left child available, add it to queue
+
             if (node.left != null)
                 leftQueue.add(node.left);
 
-            // if right child, transfer the node to right
             if (node.right != null)
                 node = node.right;
             else {
-                // If left child Queue is not empty, utilize
-                // it to traverse further
+
                 if (!leftQueue.isEmpty()) {
                     node = leftQueue.peek();
                     leftQueue.remove();
                 } else {
-                    // All the right childs traversed and no
-                    // left child left
+
                     node = null;
                 }
             }
