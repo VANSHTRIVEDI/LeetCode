@@ -4,7 +4,48 @@ package Medium.Link_List;
 
 import java.util.HashMap;
 
+//Best approch
 class Solution {
+    public Node copyRandomList(Node head) {
+        // Check if the original list is empty
+        if (head == null)
+            return null;
+
+        // Initialize the copied list with the value from the original head
+        Node originalCopy = new Node(head.val);
+        Node copiedHead = originalCopy;
+        Node current = head;
+
+        // Create a mapping between nodes in the original list and their copies
+        HashMap<Node, Node> referenceMap = new HashMap<>();
+        referenceMap.put(current, copiedHead);
+        current = current.next;
+
+        // Copy the rest of the nodes in the list
+        while (current != null) {
+            copiedHead.next = new Node(current.val);
+            referenceMap.put(current, copiedHead.next);
+            current = current.next;
+            copiedHead = copiedHead.next;
+        }
+
+        // Reset pointers for traversing both original and copied lists
+        current = head;
+        copiedHead = originalCopy;
+
+        // Populate the 'random' pointers in the copied list using the mapping
+        while (current != null) {
+            copiedHead.random = referenceMap.get(current.random);
+            current = current.next;
+            copiedHead = copiedHead.next;
+        }
+
+        // Return the head of the copied list
+        return originalCopy;
+    }
+}
+
+class Solution2 {
     public Node copyRandomList(Node head) {
         Node orgintemp = head;
         if (orgintemp == null) {
