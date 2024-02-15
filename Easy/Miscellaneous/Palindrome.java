@@ -2,6 +2,8 @@ package Easy.Miscellaneous;
 
 import java.util.Scanner;
 
+//Palindrome in leetcode
+
 public class Palindrome {
     public static void main(String[] args) {
 
