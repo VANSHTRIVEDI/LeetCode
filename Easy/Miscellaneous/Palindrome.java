@@ -1,4 +1,4 @@
-package Medium.Miscellaneous;
+package Easy.Miscellaneous;
 
 import java.util.Scanner;
 
@@ -12,6 +12,7 @@ public class Palindrome {
         sc.close();
     }
 
+    // best way using interation
     public static boolean isPalindrome(int x) {
         if (x < 0 || (x != 0 && x % 10 == 0))
             return false;
@@ -24,14 +25,32 @@ public class Palindrome {
     }
 }
 
+// Using Recursion
+class Palindrome4 {
+    public boolean isPalindrome(int x) {
+        if (x < 0 || (x > 0 && x % 10 == 0)) {
+            return false;
+        }
+        return isPalindromeHelper(x, 0);
+    }
+
+    private boolean isPalindromeHelper(int num, int reversed) {
+        if (reversed >= num) {
+            return reversed == num || reversed / 10 == num;
+        }
+        return isPalindromeHelper(num / 10, (reversed * 10) + (num % 10));
+    }
+
+}
+
+// using string
 class Palindrome2 {
     public boolean isPalindrome(int x) {
-        String s = String.valueOf(x); // Convert to String
-        int n = s.length(); // Store the String length to int n
+        String s = String.valueOf(x);
+        int n = s.length();
 
         for (int i = 0; i < n / 2; i++) {
-            // We check whether the elements at the same distance from
-            // beginning and from ending are same, if not we return false
+
             if (s.charAt(i) != s.charAt(n - i - 1))
                 return false;
         }
@@ -40,6 +59,7 @@ class Palindrome2 {
     }
 }
 
+// Using usual way
 class Palindrome3 {
     public boolean isPalindrome(int x) {
         if (x < 0) {
