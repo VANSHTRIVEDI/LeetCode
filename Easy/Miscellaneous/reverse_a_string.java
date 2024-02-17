@@ -1,8 +1,5 @@
 package Easy.Miscellaneous;
 
-import java.util.*;
-import java.io.*;
-
 class Solution {
 
     // Using StringBuffer 1st Method
