@@ -14,7 +14,7 @@ class BinaryTreeNode<T> {
 }
 
 // fist solution
-public class hehe {
+public class Maximum_sum_path {
     public static List<Integer> maxSum(BinaryTreeNode<Integer> root) {
         ArrayList<Integer> arr = new ArrayList<>();
         ArrayList<Integer> auu = new ArrayList<>();
@@ -50,7 +50,7 @@ public class hehe {
     }
 }
 
-// second solution
+// second solution not passing all the testcases
 class hehe2 {
     public static List<Integer> maxSum(BinaryTreeNode<Integer> root) {
         if (root == null) {
@@ -69,7 +69,6 @@ class hehe2 {
         for (int i = 0; i < leftPath.size(); i++) {
             leftSum += leftPath.get(i);
         }
-
         for (int i = 0; i < rightPath.size(); i++) {
             rightSum += rightPath.get(i);
         }
@@ -77,6 +76,7 @@ class hehe2 {
         if ((leftSum >= rightSum && root.left != null) || root.right == null) {
             return leftPath;
         }
+
         return rightPath;
     }
 }
