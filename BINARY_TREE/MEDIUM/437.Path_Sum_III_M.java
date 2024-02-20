@@ -2,6 +2,7 @@ package BINARY_TREE.MEDIUM;
 
 import java.util.*;
 
+//Imp
 //https://leetcode.com/problems/path-sum-iii/description/?source=submission-ac
 
 class TreeNode {
@@ -23,7 +24,36 @@ class TreeNode {
     }
 }
 
-class Path {
+// This is a very important uploading using comulative sum
+class Path1 {
+    int total = 0;
+
+    public int pathSum(TreeNode root, int targetSum) {
+
+        HashMap<Long, Integer> map = new HashMap<>();
+        map.put((long) 0, 1);
+        rec(map, root, targetSum, 0);
+        return total;
+    }
+
+    public void rec(HashMap<Long, Integer> map, TreeNode root, int targetSum, long currsum) {
+        if (root == null) {
+            return;
+        }
+        currsum += root.val;
+        if (map.containsKey(currsum - targetSum)) {
+            total = total + map.get(currsum - targetSum);
+        }
+        map.put(currsum, map.getOrDefault(currsum, 0) + 1);
+
+        rec(map, root.left, targetSum, currsum);
+        rec(map, root.right, targetSum, currsum);
+        map.put(currsum, map.get(currsum) - 1);
+
+    }
+}
+
+class Path2 {
     public int pathSum(TreeNode root, int targetSum) {
         ArrayList<Integer> auu = new ArrayList<Integer>();
         int arr[] = new int[1];

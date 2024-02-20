@@ -17,7 +17,7 @@ class Node {
     }
 }
 
-class Solution {
+class S2 {
     // Function to return a list containing the bottom view of the given tree.
     public ArrayList<Integer> bottomView(Node root) {
         ArrayList<Integer> arr = new ArrayList<Integer>();

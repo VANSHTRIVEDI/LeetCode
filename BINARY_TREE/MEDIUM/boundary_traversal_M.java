@@ -14,7 +14,7 @@ class Node {
 }
 
 // Better Solution Using if else in recursion
-class Solution2 {
+class S {
     ArrayList<Integer> boundary(Node node) {
 
         ArrayList<Integer> list = new ArrayList<Integer>();
