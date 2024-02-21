@@ -1,7 +1,5 @@
 package BINARY_TREE.HARD;
 
-import java.util.*;
-
 //https://www.geeksforgeeks.org/problems/kth-ancestor-in-a-tree/1
 
 //This is the second method of the same program which we have already did in medium 
