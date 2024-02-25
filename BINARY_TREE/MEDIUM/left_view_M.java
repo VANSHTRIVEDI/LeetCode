@@ -23,7 +23,7 @@ class TreeNode {
 
 }
 
- class Solution {
+class Leftview {
     public static ArrayList<Integer> getLeftView(TreeNode root) {
         ArrayList<Integer> arr = new ArrayList<>();
         if (root == null) {

@@ -5,7 +5,7 @@ import java.util.*;
 //Very Imp Question
 //https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
 
-class Solution {
+class vertical {
     // Function to find the vertical order traversal of Binary Tree.
     static ArrayList<Integer> verticalOrder(Node node) {
         ArrayList<Integer> ans = new ArrayList<>();

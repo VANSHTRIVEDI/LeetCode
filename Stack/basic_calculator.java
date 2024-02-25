@@ -3,7 +3,7 @@ package Stack;
 import java.util.*;
 //https://leetcode.com/problems/basic-calculator-ii/
 
-public class basic {
+public class basic_calculator {
 
     public static int calculate(String s) {
         Stack<Integer> st = new Stack<>();

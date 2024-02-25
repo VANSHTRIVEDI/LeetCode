@@ -12,7 +12,7 @@ class Node {
     }
 }
 
-class Solution {
+class sumtree {
     boolean isSumTree(Node root) {
         int t = sum(root);
         if (t == -1) {

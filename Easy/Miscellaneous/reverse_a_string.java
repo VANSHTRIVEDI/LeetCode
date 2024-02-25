@@ -1,6 +1,6 @@
 package Easy.Miscellaneous;
 
-class Solution {
+class reverseastring {
 
     // Using StringBuffer 1st Method
     public static String reverseString(String str) {
