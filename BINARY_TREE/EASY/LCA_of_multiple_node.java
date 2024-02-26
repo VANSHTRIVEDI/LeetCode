@@ -18,12 +18,7 @@ class lcaOfThreeNode {
         if (root == null)
             return 0;
 
-        int left = solve(root.left, node1, node2, node3, arr);
-        if (arr[0] != null) {
-            return left;
-        }
-        int right = solve(root.right, node1, node2, node3, arr);
-        int maxx = left + right;
+        int maxx = solve(root.left, node1, node2, node3, arr) + solve(root.right, node1, node2, node3, arr);
 
         if (root.data == node1) {
             maxx++;
