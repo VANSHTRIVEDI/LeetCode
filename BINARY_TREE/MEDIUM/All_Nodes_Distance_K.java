@@ -4,6 +4,16 @@ import java.util.*;
 //https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/
 
 //my solution using bfs and dfs
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
+    }
+}
+
 class AllNodesDistance {
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         List<Integer> arr = new ArrayList<>();
