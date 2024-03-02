@@ -10,9 +10,17 @@ public class implementation_insertion {
         Node root = null;
         System.out.println("Enter Data to create Bts");
         root = createroot(root);
-        System.err.println("PRINTING THE BST" + root.data + " " + root.left.data);
-
+        System.err.println("LEVEL ORDER PRINTING THE BST");
         levelOrderinsertion(root);
+        System.out.println();
+        System.err.println("INORDER PRINTING THE BST");
+        inordertraversal(root);
+        System.out.println();
+        System.err.println("PREEORDER PRINTING THE BST");
+        preorder(root);
+        System.out.println();
+        System.err.println("POSTORDER PRINTING THE BST");
+        postorder(root);
 
     }
 
@@ -50,6 +58,7 @@ public class implementation_insertion {
             return;
         }
         q.offer(root);
+        q.offer(null);
         while (!q.isEmpty()) {
             Node temp = q.remove();
             if (temp == null) {
@@ -68,6 +77,34 @@ public class implementation_insertion {
             }
 
         }
+
+    }
+
+    public static void inordertraversal(Node root) {
+        if (root == null) {
+            return;
+        }
+        inordertraversal(root.left);
+        System.err.print(root.data + " ");
+        inordertraversal(root.right);
+    }
+
+    public static void postorder(Node root) {
+        if (root == null) {
+            return;
+        }
+        postorder(root.left);
+        postorder(root.right);
+        System.err.print(root.data + " ");
+    }
+
+    public static void preorder(Node root) {
+        if (root == null) {
+            return;
+        }
+        System.err.print(root.data + " ");
+        preorder(root.left);
+        preorder(root.right);
 
     }
 
