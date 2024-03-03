@@ -25,6 +25,7 @@ class TreeNode {
 // better way
 class Validatee2 {
     public boolean isValidBST(TreeNode root) {
+        // we are using long.minvalue beacuse of the data limit
         return validate(root, Long.MIN_VALUE, Long.MAX_VALUE);
 
     }
