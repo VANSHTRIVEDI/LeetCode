@@ -22,6 +22,30 @@ class TreeNode {
     }
 }
 
+// better way
+class Validatee2 {
+    public boolean isValidBST(TreeNode root) {
+        return validate(root, Long.MIN_VALUE, Long.MAX_VALUE);
+
+    }
+
+    public static boolean validate(TreeNode root, long min, long max) {
+        if (root == null) {
+            return true;
+        }
+        // if((int)root.data>=min && (int)root.data<=max) if nodeleft can be equal to
+        // node
+        if (root.val > min && root.val < max) {
+            Boolean left = validate(root.left, min, root.val);
+            Boolean right = validate(root.right, root.val, max);
+
+            return left && right;
+        }
+        return false;
+
+    }
+}
+
 class Validatee {
 
     public boolean isValidBST(TreeNode root) {
