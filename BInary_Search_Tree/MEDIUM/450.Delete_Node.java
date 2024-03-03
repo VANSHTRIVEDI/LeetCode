@@ -1,5 +1,6 @@
-package BInary_Search_Tree.Easy;
+package BInary_Search_Tree.MEDIUM;
 
+//https://leetcode.com/problems/delete-node-in-a-bst/description/
 class TreeNode {
     int val;
     TreeNode left;
