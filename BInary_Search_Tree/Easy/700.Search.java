@@ -1,7 +1,7 @@
 package BInary_Search_Tree.Easy;
 
 //https://leetcode.com/problems/search-in-a-binary-search-tree/
-
+//same as binary seach
 class TreeNode {
     int val;
     TreeNode left;
