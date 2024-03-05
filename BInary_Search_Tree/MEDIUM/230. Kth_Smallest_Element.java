@@ -22,8 +22,44 @@ class TreeNode {
     }
 }
 
-// best way
+// using morrise traversal
 
+class kthsamlles3 {
+    public int kthSmallest(TreeNode root, int k) {
+        int i = 0;
+
+        while (root != null) {
+
+            if (root.left == null) {
+                i++;
+                if (i == k) {
+                    return (int) root.val;
+                }
+                root = root.right;
+            } else {
+                TreeNode pred = root.left;
+                while (pred.right != null && pred.right != root) {
+                    pred = pred.right;
+                }
+                if (pred.right == null) {
+                    pred.right = root;
+                    root = root.left;
+                } else {
+                    i++;
+                    if (i == k) {
+                        return (int) root.val;
+                    }
+                    pred.right = null;
+                    root = root.right;
+                }
+            }
+
+        }
+        return -1;
+    }
+}
+
+// best way
 class kthsamlles {
     public int kthSmallest(TreeNode root, int k) {
         int[] count = { 0 };
