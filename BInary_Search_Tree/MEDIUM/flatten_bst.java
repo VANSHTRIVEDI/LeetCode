@@ -1,5 +1,6 @@
 package BInary_Search_Tree.MEDIUM;
 
+import java.util.*;
 //https://www.codingninjas.com/studio/problems/flatten-bst-to-a-sorted-list_1169459?leftPanelTab=0&leftPanelTabValue=PROBLEM
 
 class TreeNode<T> {
@@ -47,5 +48,36 @@ class flattenbst {
             head = root;
         }
         solve(root.right);
+    }
+}
+
+// love babbar way using arrayList and inorder traversal
+class flattenbst2 {
+    public static TreeNode<Integer> flatten(TreeNode<Integer> root) {
+        // Write your code here
+        ArrayList<TreeNode<Integer>> nodeList = new ArrayList<>();
+        findHead(root, nodeList);
+
+        for (int i = 1; i < nodeList.size(); i++) {
+            TreeNode<Integer> temp = nodeList.get(i - 1);
+            temp.right = nodeList.get(i);
+            temp.left = null;
+            if (i == nodeList.size() - 1) {
+                TreeNode<Integer> ff = nodeList.get(i);
+                ff.left = null;
+                ff.right = null;
+            }
+        }
+
+        return nodeList.get(0);
+    }
+
+    public static void findHead(TreeNode<Integer> root, ArrayList<TreeNode<Integer>> nodeList) {
+        if (root == null) {
+            return;
+        }
+        findHead(root.left, nodeList);
+        nodeList.add(root);
+        findHead(root.right, nodeList);
     }
 }
