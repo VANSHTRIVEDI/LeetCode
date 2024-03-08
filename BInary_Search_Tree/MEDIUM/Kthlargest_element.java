@@ -51,38 +51,29 @@ class largest {
 
 // using normal way
 
-class largest2 {
-    public static int KthLargestNumber(Node root, int k) {
+// class Solution {
+// public static int KthLargestNumber(TreeNode<Integer> root, int k) {
+// int[] count = {0};
+// return findKthlargest(root, k, count);
+// }
+// private static int findKthlargest(TreeNode<Integer> root, int k, int[] count)
+// {
+// if (root == null) {
+// return -1;
+// }
 
-        int i = 0;
+// int right = findKthlargest(root.right, k, count);
+// if (right != -1) {
+// return right;
+// }
 
-        while (root != null) {
-            if (root.right == null) {
-                i++;
-                if (i == k) {
-                    return (int) root.data;
-                }
-                root = root.left;
-            } else {
-                Node prev = root.right;
+// count[0]++;
+// if (count[0] == k) {
+// return root.data;
+// }
 
-                while (prev.left != null && prev.left != root) {
-                    prev = prev.left;
-                }
-                if (prev.left == null) {
-                    prev.left = root;
-                    root = root.right;
-                } else {
-                    i++;
-                    if (i == k) {
-                        return (int) root.data;
-                    }
-                    prev.left = null;
-                    root = root.left;
-                }
-            }
+// int left= findKthlargest(root.left, k, count);
 
-        }
-        return -1;
-    }
-}
+// return left;
+// }
+// }
