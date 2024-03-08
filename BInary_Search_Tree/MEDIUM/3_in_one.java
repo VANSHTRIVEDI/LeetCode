@@ -1,4 +1,5 @@
 package BInary_Search_Tree.MEDIUM;
+//https://www.geeksforgeeks.org/problems/merge-two-bst-s/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
 
 //This is not one question this is combination of questions 
 
