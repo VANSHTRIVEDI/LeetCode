@@ -1,4 +1,3 @@
-package BInary_Search_Tree.Easy;
 
 //https://leetcode.com/problems/insert-into-a-binary-search-tree/
 class TreeNode {
