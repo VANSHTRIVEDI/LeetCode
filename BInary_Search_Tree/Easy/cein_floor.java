@@ -1,3 +1,4 @@
+package BInary_Search_Tree.Easy;
 
 //https://www.codingninjas.com/studio/problems/ceil-from-bst_920464?count=25&page=12&search=&sort_entity=order&sort_order=ASC&leftPanelTabValue=PROBLEM
 class ceil {
