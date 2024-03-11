@@ -7,6 +7,8 @@ class Range {
             return 0;
         }
         if (root.val >= low && root.val <= high) {
+            // return 1+getCount(root.left,low,high)+getCount(root.right,low,high);
+            // this is for the question if someone ask number of nodes lie between the range
             return root.val + rangeSumBST(root.left, low, high) + rangeSumBST(root.right, low, high);
         }
         if (root.val < low) {
