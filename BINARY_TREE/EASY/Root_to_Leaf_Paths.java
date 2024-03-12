@@ -38,10 +38,13 @@ class RootroLeaf {
             arr.add(new ArrayList<>(t));
             return;
         }
+        // sending a new arraylist everytime is not good for timecomplexity
+        // so only at the time of adding it in the list of list we have to make a new
+        // one
         solve(root.left, arr, new ArrayList<>(t));
 
         solve(root.right, arr, new ArrayList<>(t));
-        t.remove(t.size() - 1);
+        t.remove(t.size() - 1);// this line is of no use if we are sending new arraylist everytime
 
     }
 }
