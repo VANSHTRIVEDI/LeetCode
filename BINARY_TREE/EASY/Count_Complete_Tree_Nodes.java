@@ -4,7 +4,9 @@ package BINARY_TREE.EASY;
 //https://leetcode.com/problems/count-complete-tree-nodes/description/
 
 //new method with 
-//time complexity longn*2
+//time complexity O(longn)^2
+
+//height of tree is always logn 
 
 class Solution {
     public int countNodes(TreeNode root) {
