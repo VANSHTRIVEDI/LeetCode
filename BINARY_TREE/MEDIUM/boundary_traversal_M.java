@@ -3,15 +3,15 @@ package BINARY_TREE.MEDIUM;
 //https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
 import java.util.*;;
 
-class Node {
-    int data;
-    Node left, right;
+// class Node {
+//     int data;
+//     Node left, right;
 
-    public Node(int d) {
-        data = d;
-        left = right = null;
-    }
-}
+//     public Node(int d) {
+//         data = d;
+//         left = right = null;
+//     }
+// }
 
 // Better Solution Using if else in recursion
 class S {

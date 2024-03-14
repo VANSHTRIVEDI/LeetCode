@@ -4,17 +4,17 @@ import java.util.*;
 
 //https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1
 //DO it after verticalTraversal same concept
-class Node {
-    int data;
-    Node left;
-    Node right;
+// class Node {
+//     int data;
+//     Node left;
+//     Node right;
 
-    Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
-    }
-}
+//     Node(int data) {
+//         this.data = data;
+//         left = null;
+//         right = null;
+//     }
+// }
 
 class Solution {
     // Function to return a list of nodes visible from the top view

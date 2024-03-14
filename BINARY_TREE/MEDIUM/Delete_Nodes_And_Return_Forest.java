@@ -3,7 +3,7 @@ package BINARY_TREE.MEDIUM;
 //https://leetcode.com/problems/delete-nodes-and-return-forest/
 import java.util.*;
 
-class Solution {
+class Delete {
 
     public List<TreeNode> delNodes(TreeNode root, int[] to_delete) {
         int size = to_delete.length;

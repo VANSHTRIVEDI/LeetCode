@@ -5,17 +5,17 @@ import java.util.*;
 //https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
 //DO it after verticalTraversal same concept
 
-class Node {
-    int data;
-    Node left;
-    Node right;
+// class Node {
+//     int data;
+//     Node left;
+//     Node right;
 
-    Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
-    }
-}
+//     Node(int data) {
+//         this.data = data;
+//         left = null;
+//         right = null;
+//     }
+// }
 
 class S2 {
     // Function to return a list containing the bottom view of the given tree.

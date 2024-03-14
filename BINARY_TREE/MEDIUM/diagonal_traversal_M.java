@@ -3,17 +3,17 @@ package BINARY_TREE.MEDIUM;
 import java.util.*;
 //https://www.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1
 
-class Node {
-    int data;
-    Node left;
-    Node right;
+// class Node {
+//     int data;
+//     Node left;
+//     Node right;
 
-    Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
-    }
-}
+//     Node(int data) {
+//         this.data = data;
+//         left = null;
+//         right = null;
+//     }
+// }
 
 class Tree {
     public ArrayList<Integer> diagonal(Node root) {
