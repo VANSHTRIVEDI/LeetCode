@@ -5,15 +5,15 @@ package BINARY_TREE.HARD;
 //This problem is on the concept of diameter of tree which is related to height of the tree
 //we you are able to solve diameter of tree you can solve this tooo
 
-class Node {
-    int data;
-    Node left, right;
+// class Node {
+//     int data;
+//     Node left, right;
 
-    Node(int d) {
-        data = d;
-        left = right = null;
-    }
-}
+//     Node(int d) {
+//         data = d;
+//         left = right = null;
+//     }
+// }
 
 class maximumpathsum {
     // Function to return maximum path sum from any node in a tree.
