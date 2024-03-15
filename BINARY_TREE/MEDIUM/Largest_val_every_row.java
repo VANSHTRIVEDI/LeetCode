@@ -28,7 +28,7 @@ class Largest {
 }
 
 // using bfs
-class Solution {
+class Largest2 {
     ArrayList<Integer> maximumValue(Node node) {
         ArrayList<Integer> maxValues = new ArrayList<>();
         if (node == null)

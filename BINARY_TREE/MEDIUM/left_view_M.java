@@ -3,25 +3,25 @@ package BINARY_TREE.MEDIUM;
 import java.util.ArrayList;
 //https://www.codingninjas.com/studio/problems/left-view-of-a-binary-tree_920519
 
-class TreeNode {
-    int data;
-    TreeNode left;
-    TreeNode right;
+// class TreeNode {
+//     int data;
+//     TreeNode left;
+//     TreeNode right;
 
-    TreeNode() {
-    }
+//     TreeNode() {
+//     }
 
-    TreeNode(int val) {
-        this.data = val;
-    }
+//     TreeNode(int val) {
+//         this.data = val;
+//     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.data = val;
-        this.left = left;
-        this.right = right;
-    }
+//     TreeNode(int val, TreeNode left, TreeNode right) {
+//         this.data = val;
+//         this.left = left;
+//         this.right = right;
+//     }
 
-}
+// }
 
 class Leftview {
     public static ArrayList<Integer> getLeftView(TreeNode root) {
@@ -41,7 +41,7 @@ class Leftview {
             return;
         }
         if (arr.size() <= level) {
-            arr.add((int) root.data);
+            arr.add((int) root.val);
         }
         left(arr, level + 1, root.left);
         left(arr, level + 1, root.right);

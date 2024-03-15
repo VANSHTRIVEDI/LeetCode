@@ -1,7 +1,7 @@
 package BINARY_TREE.MEDIUM;
 
 //https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/
-class Solution {
+class Count2 {
     static int max;
 
     public int averageOfSubtree(TreeNode root) {

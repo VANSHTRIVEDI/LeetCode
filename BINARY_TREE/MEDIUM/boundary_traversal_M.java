@@ -73,7 +73,7 @@ class S {
     }
 }
 
-class Solution {
+class S2 {
     ArrayList<Integer> boundary(Node node) {
         int arr[] = new int[2];
         ArrayList<Integer> list = new ArrayList<Integer>();
