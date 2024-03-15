@@ -5,6 +5,7 @@ import java.util.*;
 //https://leetcode.com/problems/binary-tree-inorder-traversal/
 ////we are using morris traversal o(n)time and o(1) space
 //only traversal which uses o(1) space time which is good
+
 class TreeNode {
     int val;
     TreeNode left;

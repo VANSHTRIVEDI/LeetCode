@@ -3,16 +3,16 @@ package BINARY_TREE.MEDIUM;
 import java.util.*;
 
 //https://www.geeksforgeeks.org/problems/maximum-sum-of-non-adjacent-nodes/1
-class Node {
-    int data;
-    Node left, right;
+// class Node {
+//     int data;
+//     Node left, right;
 
-    Node(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
-    }
-}
+//     Node(int data) {
+//         this.data = data;
+//         this.left = null;
+//         this.right = null;
+//     }
+// }
 
 class Nonadjacent {
     static Map<Node, Integer> m = new HashMap<>();
