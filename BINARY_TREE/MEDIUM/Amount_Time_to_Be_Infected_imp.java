@@ -3,7 +3,7 @@ package BINARY_TREE.MEDIUM;
 //https://www.youtube.com/watch?v=Xm8jIjAK_Zs&list=PLpIkg8OmuX-K23LhcamOcDlTBisiNJy5E&index=36
 //this is the dfs method of doing this and its very important 
 //https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/
-class Solution {
+class Amount {
     int max;
 
     public int amountOfTime(TreeNode root, int start) {
