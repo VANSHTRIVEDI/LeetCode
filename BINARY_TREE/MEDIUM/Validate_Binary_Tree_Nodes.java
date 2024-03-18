@@ -2,6 +2,8 @@ package BINARY_TREE.MEDIUM;
 
 import java.util.*;
 
+//https://leetcode.com/problems/validate-binary-tree-nodes/submissions/1207248861/
+//https://www.youtube.com/watch?v=JlQEoNs263o&list=PLpIkg8OmuX-K23LhcamOcDlTBisiNJy5E&index=30
 class Solution {
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
         Map<Integer, Integer> childToParent = new HashMap<>();
@@ -37,7 +39,11 @@ class Solution {
             if (childToParent.containsKey(i)) {
                 continue;
             } else {
-                root = i;
+                if (root != -1) {
+                    return false;
+                } else {
+                    root = i;
+                }
             }
 
         }
