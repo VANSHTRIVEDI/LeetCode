@@ -3,7 +3,7 @@ package BINARY_TREE.EASY;
 import java.util.*;;
 
 //https://leetcode.com/problems/path-sum-ii/
-class Solution {
+class Pathsum1 {
     static List<List<Integer>> list;
 
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
