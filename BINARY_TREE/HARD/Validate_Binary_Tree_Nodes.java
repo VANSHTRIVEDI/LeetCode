@@ -1,4 +1,4 @@
-package BINARY_TREE.MEDIUM;
+package BINARY_TREE.HARD;
 
 import java.util.*;
 

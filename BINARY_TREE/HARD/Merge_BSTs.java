@@ -3,6 +3,25 @@ package BINARY_TREE.HARD;
 import java.util.*;
 
 //https://leetcode.com/problems/merge-bsts-to-create-single-bst/description/
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
 class Solution {
     public TreeNode canMerge(List<TreeNode> trees) {
         HashMap<Integer, TreeNode> map = new HashMap<>();
