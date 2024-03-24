@@ -20,6 +20,21 @@ public class insertion {
         for (int i = 1; i < arr.size(); i++) {
             System.err.print(arr.get(i) + " ");
         }
+        System.err.println("HYPIFY");
+        System.err.println();
+        ArrayList<Integer> auu = new ArrayList<>();
+        auu.add(-1);
+        auu.add(54);
+        auu.add(53);
+        auu.add(55);
+        auu.add(52);
+        auu.add(50);
+        for (int ii = (auu.size() / 2) - 1; ii >= 0; ii--) {
+            heapify(auu, auu.size(), ii);
+        }
+        for (int i = 1; i < auu.size(); i++) {
+            System.err.print(auu.get(i) + " ");
+        }
 
     }
 
@@ -66,5 +81,25 @@ public class insertion {
             }
         }
 
+    }
+
+    public static void heapify(ArrayList<Integer> arr, int n, int i) {
+        int largest = i;
+        int left = 2 * i;
+        int right = 2 * i + 1;
+
+        if (left < arr.size() && arr.get(largest) > arr.get(left)) {
+            largest = left;
+        } else if (right < arr.size() && arr.get(largest) > arr.get(right)) {
+            largest = right;
+        }
+
+        if (largest != i) {
+            int temp = arr.get(i);
+            arr.set(i, arr.get(largest));
+            arr.set(largest, temp);
+            heapify(arr, n, largest);
+
+        }
     }
 }
