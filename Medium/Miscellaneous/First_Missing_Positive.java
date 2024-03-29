@@ -1,6 +1,6 @@
 package Medium.Miscellaneous;
 
-class Solution {
+class first {
     // Function to swap elements in the array
     private void swap(int[] arr, int i, int j) {
         int temp = arr[i];

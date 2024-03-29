@@ -3,7 +3,7 @@ package Medium.Miscellaneous;
 import java.util.*;
 
 //https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/description/?envType=daily-question&envId=2024-03-28
-class Solution {
+class Longest {
     public int maxSubarrayLength(int[] nums, int k) {
         int ans = 0;
         HashMap<Integer, Integer> mp = new HashMap<>();
