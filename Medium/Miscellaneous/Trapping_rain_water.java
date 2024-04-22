@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 public class Trapping_rain_water {
     // https://www.naukri.com/code360/problems/trapping-rainwater_630519?leftPanelTabValue=DISCUSS
     public static long getTrappedWater(long[] arr, int n) {

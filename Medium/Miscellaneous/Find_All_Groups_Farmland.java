@@ -1,6 +1,8 @@
+package Medium.Miscellaneous;
+
 import java.util.*;
 
-public class Find_All_Groups_Farmland {
+class Find_All_Groups_Farmland {
     public int[][] findFarmland(int[][] land) {
         int rows = land.length;
         int cols = land[0].length;

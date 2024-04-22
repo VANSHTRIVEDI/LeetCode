@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 import java.util.*;
 
 public class Duplicate_In_Array {

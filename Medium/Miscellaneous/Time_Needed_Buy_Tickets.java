@@ -1,3 +1,4 @@
+package Medium.Miscellaneous;
 
 public class Time_Needed_Buy_Tickets {
     public int timeRequiredToBuy(int[] tickets, int k) {

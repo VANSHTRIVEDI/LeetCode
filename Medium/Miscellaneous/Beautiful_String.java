@@ -1,4 +1,6 @@
-public class Beautiful_String {
+package Medium.Miscellaneous;
+
+class Beautiful_String {
     public static int calculateCount(String str, char c) {
 
         int count = 0;

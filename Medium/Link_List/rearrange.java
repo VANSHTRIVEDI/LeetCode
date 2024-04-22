@@ -4,6 +4,16 @@ package Medium.Link_List;
 import java.util.*;
 
 //https://www.codingninjas.com/studio/problems/rearrange-linked-list_764146?leftPanelTabValue=SUBMISSION
+class ListNode {
+    int data;
+    ListNode next;
+
+    ListNode(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
 class Node {
     int data;
     Node next;
