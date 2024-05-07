@@ -1,7 +1,8 @@
-package BINARY_TREE.MEDIUM;
+package Medium.Miscellaneous;
 
 import java.util.*;
 
+//https://www.naukri.com/code360/problems/find-minimum-sum-subarray-of-given-size_873368
 public class Minimum_Sum_Subarray {
     public static int minSubarraySum(ArrayList<Integer> arr, int n, int k) {
         int sum = 0, j = 0;

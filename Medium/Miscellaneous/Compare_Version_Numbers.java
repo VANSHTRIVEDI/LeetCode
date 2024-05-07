@@ -1,4 +1,4 @@
-package BINARY_TREE.MEDIUM;
+package Medium.Miscellaneous;
 
 //https://leetcode.com/problems/compare-version-numbers/?envType=daily-question&envId=2024-05-03
 public class Compare_Version_Numbers {
