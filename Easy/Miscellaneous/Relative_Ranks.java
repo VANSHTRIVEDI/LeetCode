@@ -1,7 +1,7 @@
 package Easy.Miscellaneous;
 
 import java.util.*;
-
+//https://leetcode.com/problems/relative-ranks/
 public class Relative_Ranks {
 
     // using hashing nlogn
