@@ -1,6 +1,9 @@
 package Medium.Miscellaneous;
 
+import java.util.*;
 //https://leetcode.com/problems/k-th-smallest-prime-fraction/?envType=daily-question&envId=2024-05-10
+
+//best solution using binary seach time complexity nlogn
 class Kth_Smallest_Prime_Fraction {
     public int[] kthSmallestPrimeFraction(int[] arr, int k) {
         int n = arr.length;
@@ -39,5 +42,40 @@ class Kth_Smallest_Prime_Fraction {
             }
         }
         return new int[] { count, num, deno };
+    }
+}
+
+// same solution using priority queue
+// The time complexity of this code is O((n^n)*logn)
+
+class Kth_Smallest_Prime_Fraction2 {
+    public int[] kthSmallestPrimeFraction(int[] arr, int k) {
+
+        PriorityQueue<info> q = new PriorityQueue<>((a, b) -> Double.compare(a.value, b.value));
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = arr.length - 1; j > i; j--) {
+                double fraction = (double) arr[i] / arr[j];
+                q.add(new info(fraction, i, j));
+            }
+        }
+        while (k > 1) {
+            q.poll();
+            k--;
+        }
+
+        info result = q.poll();
+        return new int[] { arr[result.i], arr[result.j] };
+    }
+}
+
+class info {
+    double value;
+    int i;
+    int j;
+
+    info(double v, int i, int j) {
+        this.value = v;
+        this.i = i;
+        this.j = j;
     }
 }
