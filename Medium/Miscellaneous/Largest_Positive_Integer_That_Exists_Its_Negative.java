@@ -2,7 +2,7 @@ package Medium.Miscellaneous;
 
 import java.util.*;
 
-class Solution {
+class largest {
     public int findMaxK(int[] nums) {
         Arrays.sort(nums);
         int left = 0, right = nums.length - 1;

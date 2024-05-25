@@ -4,7 +4,7 @@ import java.util.*;
 
 //https://leetcode.com/problems/validate-binary-tree-nodes/submissions/1207248861/
 //https://www.youtube.com/watch?v=JlQEoNs263o&list=PLpIkg8OmuX-K23LhcamOcDlTBisiNJy5E&index=30
-class Solution {
+class validate1 {
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
         Map<Integer, Integer> childToParent = new HashMap<>();
         Map<Integer, List<Integer>> parentTochild = new HashMap<>();

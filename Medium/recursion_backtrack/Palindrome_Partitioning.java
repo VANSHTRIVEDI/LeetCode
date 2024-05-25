@@ -37,7 +37,7 @@ public class Palindrome_Partitioning {
 
 // my method
 
-class Solution {
+class Palindrome_Partitioning2 {
     static List<List<String>> f;
 
     public List<List<String>> partition(String s) {

@@ -3,24 +3,24 @@ package BINARY_TREE.EASY;
 import java.util.*;
 
 //https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+//  class TreeNode {
+//     int val;
+//     TreeNode left;
+//     TreeNode right;
 
-    TreeNode() {
-    }
+//     TreeNode() {
+//     }
 
-    TreeNode(int val) {
-        this.val = val;
-    }
+//     TreeNode(int val) {
+//         this.val = val;
+//     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+//     TreeNode(int val, TreeNode left, TreeNode right) {
+//         this.val = val;
+//         this.left = left;
+//         this.right = right;
+//     }
+// }
 
 class Check {
     static int number = 0;

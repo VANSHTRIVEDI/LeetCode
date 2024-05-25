@@ -2,24 +2,24 @@ package BINARY_TREE.HARD;
 
 //https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+// class TreeNode {
+//     int val;
+//     TreeNode left;
+//     TreeNode right;
 
-    TreeNode() {
-    }
+//     TreeNode() {
+//     }
 
-    TreeNode(int val) {
-        this.val = val;
-    }
+//     TreeNode(int val) {
+//         this.val = val;
+//     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+//     TreeNode(int val, TreeNode left, TreeNode right) {
+//         this.val = val;
+//         this.left = left;
+//         this.right = right;
+//     }
+// }
 
 class Solution {
     static int maxx;

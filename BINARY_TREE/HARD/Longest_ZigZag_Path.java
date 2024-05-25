@@ -1,24 +1,24 @@
 package BINARY_TREE.HARD;
 
 //https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description/
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+// class TreeNode {
+//     int val;
+//     TreeNode left;
+//     TreeNode right;
 
-    TreeNode() {
-    }
+//     TreeNode() {
+//     }
 
-    TreeNode(int val) {
-        this.val = val;
-    }
+//     TreeNode(int val) {
+//         this.val = val;
+//     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+//     TreeNode(int val, TreeNode left, TreeNode right) {
+//         this.val = val;
+//         this.left = left;
+//         this.right = right;
+//     }
+// }
 
 class ZigZag {
     static int max;

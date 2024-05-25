@@ -8,7 +8,7 @@ package BINARY_TREE.EASY;
 
 //height of tree is always logn 
 
-class Solution {
+class Count {
     public int countNodes(TreeNode root) {
         return solve(root);
     }
