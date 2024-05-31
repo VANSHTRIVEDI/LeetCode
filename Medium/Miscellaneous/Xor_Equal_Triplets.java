@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 public class Xor_Equal_Triplets {
     // https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/?envType=daily-question&envId=2024-05-30
     public int countTriplets(int[] arr) {
