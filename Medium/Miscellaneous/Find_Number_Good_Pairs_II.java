@@ -2,6 +2,7 @@ package Medium.Miscellaneous;
 
 import java.util.*;
 
+// /https://leetcode.com/problems/find-the-number-of-good-pairs-ii/description/
 //beats 92
 public class Find_Number_Good_Pairs_II {
     public long numberOfPairs(int[] nums1, int[] nums2, int k) {
