@@ -3,6 +3,7 @@ package Medium.Miscellaneous;
 import java.util.ArrayList;
 import java.util.List;
 
+//
 public class Find_Common_Characters {
     public List<String> commonChars(String[] words) {
         String t = words[0];
