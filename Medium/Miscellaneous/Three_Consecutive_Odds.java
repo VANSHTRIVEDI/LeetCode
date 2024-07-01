@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 public class Three_Consecutive_Odds {
     public boolean threeConsecutiveOdds(int[] arr) {
         int n = arr.length;
