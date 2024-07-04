@@ -22,6 +22,7 @@ public class LongestCommonSubsequence {
         if (dp[m][n] != -1) {
             return dp[m][n];
         }
+        
         if (s.charAt(m - 1) == t.charAt(n - 1)) {
             dp[m][n] = 1 + lcsUtil(s, t, m - 1, n - 1, dp);
             return dp[m][n];
