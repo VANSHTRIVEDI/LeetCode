@@ -3,9 +3,13 @@ This repository contains my solutions to various Data Structures and Algorithms 
 
 Features:
 Organized by Topic: Solutions are categorized by DSA topics such as Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, and more.
+
 Detailed Explanations: Each solution includes detailed comments and explanations to help understand the approach and logic used.
+
 Multiple Languages: Solutions are provided in multiple programming languages, including Java, Python, and C++, demonstrating versatility in problem-solving.
+
 Optimized Code: Emphasis on writing clean, optimized, and efficient code to handle edge cases and improve performance.
+
 Regular Updates: The repository is regularly updated with new solutions and optimizations as I continue to practice and learn.
 
 How to Use:
