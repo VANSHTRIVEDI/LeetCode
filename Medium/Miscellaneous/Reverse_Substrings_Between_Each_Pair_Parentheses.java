@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 import java.util.Stack;
 
 //Approach-1 (Brute Force)
