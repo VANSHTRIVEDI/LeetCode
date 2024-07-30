@@ -1,4 +1,4 @@
-package Medium.Miscellaneous;
+
 
 //https://leetcode.com/problems/word-search/?envType=daily-question&envId=2024-04-03
 public class Word_Search {
