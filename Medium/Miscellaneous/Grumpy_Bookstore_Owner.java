@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 public class Grumpy_Bookstore_Owner {
     public int maxSatisfied(int[] customers, int[] grumpy, int minutes) {

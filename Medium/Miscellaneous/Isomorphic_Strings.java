@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 public class Isomorphic_Strings {
     public boolean isIsomorphic(String s, String t) {

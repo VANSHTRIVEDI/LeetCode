@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 import java.util.LinkedList;
 

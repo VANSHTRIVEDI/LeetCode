@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 //https://www.naukri.com/code360/problems/flip-bits_1063248?interviewProblemRedirection=true&leftPanelTabValue=PROBLEM
 public class Flip_Bits {

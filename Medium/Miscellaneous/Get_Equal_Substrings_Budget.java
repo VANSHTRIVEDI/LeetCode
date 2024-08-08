@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 public class Get_Equal_Substrings_Budget {
     public int equalSubstring(String s, String t, int maxCost) {

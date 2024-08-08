@@ -1,5 +1,7 @@
 
 
+
+
 class Beautiful_String {
     public static int calculateCount(String str, char c) {
 

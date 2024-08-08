@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 //https://leetcode.com/problems/find-peak-element/description/
 import java.util.*;

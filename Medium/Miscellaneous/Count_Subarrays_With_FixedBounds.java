@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 public class Count_Subarrays_With_FixedBounds {
     public long countSubarrays(int[] nums, int minK, int maxK) {

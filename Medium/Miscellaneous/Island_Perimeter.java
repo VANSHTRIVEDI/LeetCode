@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 public class Island_Perimeter {
     public int islandPerimeter(int[][] grid) {

@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 //https://leetcode.com/problems/frequency-of-the-most-frequent-element/submissions/
 import java.util.*;

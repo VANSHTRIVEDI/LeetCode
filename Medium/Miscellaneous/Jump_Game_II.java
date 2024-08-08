@@ -1,4 +1,3 @@
-package Medium.Miscellaneous;
 
 public class Jump_Game_II {
     public int jump(int[] nums) {
