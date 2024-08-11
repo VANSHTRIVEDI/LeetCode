@@ -1,3 +1,4 @@
+package Medium.Miscellaneous;
 
 public class Count_Number_Nice_Subarrays {
     public int numberOfSubarrays(int[] nums, int k) {

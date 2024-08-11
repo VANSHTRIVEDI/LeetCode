@@ -1,3 +1,4 @@
+package Medium.Miscellaneous;
 
 //Hard
 //https://leetcode.com/problems/find-the-safest-path-in-a-grid/?envType=daily-question&envId=2024-05-15

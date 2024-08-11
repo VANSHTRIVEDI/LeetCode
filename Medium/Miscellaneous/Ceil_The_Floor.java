@@ -1,3 +1,4 @@
+package Medium.Miscellaneous;
 
 public class Ceil_The_Floor {
     public static int[] getFloorAndCeil(int[] arr, int n, int x) {
