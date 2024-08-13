@@ -1,5 +1,9 @@
+package Medium.Miscellaneous;
+
+import java.util.*;
+
 //https://leetcode.com/problems/lucky-numbers-in-a-matrix/?envType=daily-question&envId=2024-07-19
-class Solution {
+class lucky {
     public List<Integer> luckyNumbers(int[][] matrix) {
         int m = matrix.length; // rows
         int n = matrix[0].length; // columns

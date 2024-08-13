@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 public class Integer_English_Words {
     public String numberToWords(int num) {
         if (num == 0)

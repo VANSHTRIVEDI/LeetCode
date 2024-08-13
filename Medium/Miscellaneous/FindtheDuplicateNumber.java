@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 
 //https://leetcode.com/problems/find-the-duplicate-number/?envType=daily-question&envId=2024-03-24
 public class FindtheDuplicateNumber {

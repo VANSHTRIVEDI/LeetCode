@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 
 //https://leetcode.com/problems/jump-game/
 public class Jump_Game {

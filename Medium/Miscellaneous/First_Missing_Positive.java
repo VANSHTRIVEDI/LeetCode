@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 
 class first {
     // Function to swap elements in the array

@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 
 public class Inversion_control {
     public static long getInversions(long arr[], int n) {

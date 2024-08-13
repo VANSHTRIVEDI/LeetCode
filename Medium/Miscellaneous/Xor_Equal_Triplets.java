@@ -1,3 +1,5 @@
+package Medium.Miscellaneous;
+
 
 
 public class Xor_Equal_Triplets {
