@@ -21,7 +21,7 @@ package BINARY_TREE.HARD;
 //     }
 // }
 
-class Solution {
+class MaximumSum {
     static int maxx;
 
     public int maxSumBST(TreeNode root) {

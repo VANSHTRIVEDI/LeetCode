@@ -1,24 +1,24 @@
 package BInary_Search_Tree.Easy;
 
 //https://leetcode.com/problems/insert-into-a-binary-search-tree/
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+// class TreeNode {
+//     int val;
+//     TreeNode left;
+//     TreeNode right;
 
-    TreeNode() {
-    }
+//     TreeNode() {
+//     }
 
-    TreeNode(int val) {
-        this.val = val;
-    }
+//     TreeNode(int val) {
+//         this.val = val;
+//     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+//     TreeNode(int val, TreeNode left, TreeNode right) {
+//         this.val = val;
+//         this.left = left;
+//         this.right = right;
+//     }
+// }
 
 // using while loop
 class insert {
