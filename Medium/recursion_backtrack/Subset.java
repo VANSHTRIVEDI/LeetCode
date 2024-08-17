@@ -129,10 +129,10 @@ class subset6 {
         return finall;
     }
 
-    public static void main(String[] args) {
-        subset6 solution = new subset6();
-        int[] nums = { 1, 2, 3 };
-        List<List<Integer>> result = solution.subsets(nums);
-        System.out.println(result);
-    }
+    // public static void main(String[] args) {
+    // subset6 solution = new subset6();
+    // int[] nums = { 1, 2, 3 };
+    // List<List<Integer>> result = solution.subsets(nums);
+    // System.out.println(result);
+    // }
 }
