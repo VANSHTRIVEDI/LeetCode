@@ -57,44 +57,38 @@ class Info {
 
 // same method just the way of writing is different
 
-// class Solution {
-// static int[] replaceWithRank(int arr[], int N) {
-// PriorityQueue<Info> q=new PriorityQueue<>((a,b)->(int)a.value-(int)b.value);
-// for(int i=0;i<arr.length;i++)
-// {
-// q.add(new Info(arr[i],i));
-// }
-// int rank=1;
-// int prev=q.peek().value;
-// while(!q.isEmpty())
-// {
-// Info temp=q.poll();
-// int index=temp.index;
-// if(temp.value==prev)
-// {
-// arr[index]=rank;
-// }
-// else
-// {
-// rank++;
-// arr[index]=rank;
+class Replace_elements_rank_array2 {
+    static int[] replaceWithRank(int arr[], int N) {
+        PriorityQueue<Info> q = new PriorityQueue<>((a, b) -> (int) a.value - (int) b.value);
+        for (int i = 0; i < arr.length; i++) {
+            q.add(new Info(arr[i], i));
+        }
+        int rank = 1;
+        int prev = q.peek().value;
+        while (!q.isEmpty()) {
+            Info temp = q.poll();
+            int index = temp.index;
+            if (temp.value == prev) {
+                arr[index] = rank;
+            } else {
+                rank++;
+                arr[index] = rank;
 
-// }
-// prev=temp.value;
+            }
+            prev = temp.value;
 
-// }
-// return arr;
+        }
+        return arr;
 
-// }
-// }
+    }
+}
 
-// class Info
-// {
+// class Info {
 // int value;
 // int index;
-// Info(int value,int index)
-// {
-// this.value=value;
-// this.index=index;
+
+// Info(int value, int index) {
+// this.value = value;
+// this.index = index;
 // }
 // }
