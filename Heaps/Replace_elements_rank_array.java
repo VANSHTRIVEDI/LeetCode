@@ -83,12 +83,12 @@ class Replace_elements_rank_array2 {
     }
 }
 
-// class Info {
-// int value;
-// int index;
+class Info {
+int value;
+int index;
 
-// Info(int value, int index) {
-// this.value = value;
-// this.index = index;
-// }
-// }
+Info(int value, int index) {
+this.value = value;
+this.index = index;
+}
+}
